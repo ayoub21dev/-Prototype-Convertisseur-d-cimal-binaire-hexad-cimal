@@ -1,0 +1,19 @@
+{
+    "name": "ayoub/converter",
+    "description": "a cli script",
+    "autoload": {
+        "psr-4": {
+            "Ayoub\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ayoub21dev",
+            "email": "Ayoubcode941@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    }
+}
+
