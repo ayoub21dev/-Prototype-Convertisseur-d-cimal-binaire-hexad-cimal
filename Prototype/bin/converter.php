@@ -4,7 +4,6 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\NumberConverter;
-use App\ConverterInterface;
 use Throwable;
 
 try {
@@ -15,7 +14,7 @@ try {
     $number = (int) ($argv[count($argv) - 1] ?? null);
 
     if (empty($number) && !is_numeric($number)) {
-        throw new InvalidArgumentException("Veuillez fournir un nombre valide.");
+        throw new InvalidArgumentException("please enter a valid number.");
     }
     
     $converter = new NumberConverter($number);
