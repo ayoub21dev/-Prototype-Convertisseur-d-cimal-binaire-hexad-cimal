@@ -1,0 +1,11 @@
+{
+    "name": "ayoub/mini-calc",
+    "description": "Une mini-calculatrice CLI pour les opérations binaires.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
