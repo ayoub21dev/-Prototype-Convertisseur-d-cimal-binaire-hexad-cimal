@@ -1,5 +1,5 @@
 <?php
-namespace APP;
+namespace App;
 class calculator{
  private int $numberA;
  private int $numberB;

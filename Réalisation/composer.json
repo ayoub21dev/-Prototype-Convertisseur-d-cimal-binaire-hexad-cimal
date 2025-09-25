@@ -7,5 +7,9 @@
             "App\\": "src/"
         }
     },
+
+    "scripts": {
+    "convert": "php bin/calc.php"
+  },
     "require": {}
 }
