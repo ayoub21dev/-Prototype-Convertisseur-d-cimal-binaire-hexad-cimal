@@ -10,6 +10,12 @@ try {
     $input = trim(file_get_contents(__DIR__ . '/../samples/input.txt'));
     $args = explode(' ', $input);
 
+    if (count($args) < 2 || empty($input)) {
+
+    throw new InvalidArgumentException("Veuillez fournir deux nombres");
+
+    }
+
     $numberA = (int) $args[0];
     $numberB = (int) $args[1];
 

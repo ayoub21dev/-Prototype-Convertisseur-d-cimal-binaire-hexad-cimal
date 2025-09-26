@@ -12,7 +12,6 @@ class OutputHandler
     }
 
 
-
     public function saveJson(): void
     {
         echo json_encode($this->results, JSON_PRETTY_PRINT);
