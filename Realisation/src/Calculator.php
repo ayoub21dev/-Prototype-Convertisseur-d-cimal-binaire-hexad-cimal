@@ -1,6 +1,6 @@
 <?php
 namespace App;
-class calculator{
+class Calculator{
  private int $numberA;
  private int $numberB;
     public function __construct(int $number1,int $number2)

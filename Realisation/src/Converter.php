@@ -16,6 +16,9 @@ class Converter implements ConverterInterface {
              public function toHexa():string{
                 return dechex($this->number);
              }
+              public function toDecimal(): int{
+                return $this->number;
+             }
   
 
 };
