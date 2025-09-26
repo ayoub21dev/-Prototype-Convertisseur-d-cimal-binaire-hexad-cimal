@@ -34,3 +34,12 @@ Bash
 
 composer save
 The output will be saved in samples/output.json
+
+ ----Project Structure---
+bin/: Contains the executable scripts (calc.php and save.php).
+
+src/: Holds the main project classes (Calculator, Converter, OutputHandler).
+
+samples/: Stores the input and output files (input.txt and output.json).
+
+composer.json: The project configuration file with all custom scripts.
