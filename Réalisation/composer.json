@@ -1,15 +1,21 @@
 {
-    "name": "ayoub/mini-calc",
-    "description": "Une mini-calculatrice CLI pour les opérations binaires.",
-    "type": "project",
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
-
-    "scripts": {
-    "convert": "php bin/calc.php"
+  "name": "ayoub/mini-calc",
+  "description": "Une mini-calculatrice CLI pour les opérations binaires.",
+  "type": "project",
+  "autoload": {
+      "psr-4": {
+          "App\\": "src/"
+      }
   },
-    "require": {}
+  "scripts": {
+    "convert": "php bin/calc.php",
+    "clear-output": "php -r \"file_put_contents('samples/output.json', '');\"",
+    "build": [
+        "@composer dump-autoload -o",
+        "echo 'Build complete.'"
+    ],
+    "test": "php -r \"$input = trim(file_get_contents('samples/input.txt')); passthru('php bin/calc.php ' . $input);\"",
+    "save": "php bin/save.php > samples/output.json"
+  },
+  "require": {}
 }
